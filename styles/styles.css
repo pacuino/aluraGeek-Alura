@@ -1,0 +1,57 @@
+@import url(./reset.css);
+
+:root {
+    --main-purple: #5300c8;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: block;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+header, footer {
+    background-color: var(--main-purple);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 4rem;
+    width: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-purple);
+    border-radius: 5px;
+
+}
+
+.img-container {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    padding: 10px;
+    object-fit: cover;
+}
+
