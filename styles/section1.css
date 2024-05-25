@@ -1,0 +1,68 @@
+/* Primera Seccion*/
+
+.section-1 {
+    display: flexbox;
+    width: 70%;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0.5rem;
+    margin: 10px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-yellow);
+    border-radius: 5px;
+    border: 2px solid var(--main-black);
+}
+
+.img-container {
+    display: block;
+    position: sticky;
+    height: 100%;
+    width: 100%;
+    padding: 24px;
+    object-fit: cover;
+    
+}
+
+.img-container > img {
+    border: 2px solid var(--main-black);
+    border-radius: 5px;
+    background-color: var(--main-white);
+}
+
+.card-container--info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+}
+
+.card-container--info > p {
+    display: flex;
+    justify-content: left;
+}
+
+.card-container--value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: flex-start;
+}
+
+    /* --Tablet-- */
+
+@media (max-width: 768px) {
+    .section-1{
+        width: 100%;
+    }
+}

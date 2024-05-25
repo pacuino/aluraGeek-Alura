@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap">
     <link rel="stylesheet" href="styles/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>AluraGeek</title>
@@ -15,15 +17,18 @@
     <main class="main-container">
 
             <!--Seccion donde se listan los productos-->
-        <section>
+        <section class="section-1">
             <h2>Mis Productos</h2>
+
             <div class="product-container" data-product>
+
                 <div class="card">
-                        <!--Contenedor de la imagen-->
+                    <!--Contenedor de la imagen-->
                     <div class="img-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93k_IB58yrqU35nkrenk7t3-pKrO2PDzidQ&usqp=CAU" alt="img">
+                        <img src="https://assets.raspberrypi.com/static/50cf4345de1709e0fddf244e1b965b2e/3355f/raspberry-pi-5.webp"
+                            alt="img">
                     </div>
-                        <!--Contenedor de la informacion-->
+                    <!--Contenedor de la informacion-->
                     <div class="card-container--info">
                         <p>Arduino UNO</p>
                         <div class="card-container--value">
@@ -37,25 +42,64 @@
 
                 <div class="card">
                     <!--Contenedor de la imagen-->
-                <div class="img-container">
-                    <img src="https://www.arduino.cc/static/media/arduino-UNO.bcc69bde.png" alt="img">
-                </div>
+                    <div class="img-container">
+                        <img src="https://assets.raspberrypi.com/static/50cf4345de1709e0fddf244e1b965b2e/3355f/raspberry-pi-5.webp"
+                            alt="img">
+                    </div>
                     <!--Contenedor de la informacion-->
-                <div class="card-container--info">
-                    <p>Arduino UNO</p>
-                    <div class="card-container--value">
-                        <p>$ 28</p>
-                        <button class="delete-button" data-id="${id}">
-                            <img src="/assets/trash-solid-24.png" alt="Eliminar">
-                        </button>
+                    <div class="card-container--info">
+                        <p>Arduino UNO</p>
+                        <div class="card-container--value">
+                            <p>$ 28</p>
+                            <button class="delete-button" data-id="${id}">
+                                <img src="./assets/trash-solid-24.png" alt="Eliminar">
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="card">
+                    <!--Contenedor de la imagen-->
+                    <div class="img-container">
+                        <img src="https://assets.raspberrypi.com/static/50cf4345de1709e0fddf244e1b965b2e/3355f/raspberry-pi-5.webp"
+                            alt="img">
+                    </div>
+                    <!--Contenedor de la informacion-->
+                    <div class="card-container--info">
+                        <p>Arduino UNO</p>
+                        <div class="card-container--value">
+                            <p>$ 28</p>
+                            <button class="delete-button" data-id="${id}">
+                                <img src="./assets/trash-solid-24.png" alt="Eliminar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!--Contenedor de la imagen-->
+                    <div class="img-container">
+                        <img src="https://assets.raspberrypi.com/static/50cf4345de1709e0fddf244e1b965b2e/3355f/raspberry-pi-5.webp"
+                            alt="img">
+                    </div>
+                    <!--Contenedor de la informacion-->
+                    <div class="card-container--info">
+                        <p>Arduino UNO</p>
+                        <div class="card-container--value">
+                            <p>$ 28</p>
+                            <button class="delete-button" data-id="${id}">
+                                <img src="./assets/trash-solid-24.png" alt="Eliminar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </section>
 
             <!--Seccion donde se cargan los productos-->
-        <section>
+        <section class="section-2">
             <h2>Agregar Producto</h2>
             <form class="form-container" data-container>
                 <input type="text" placeholder="nombre..." data-name>
@@ -63,8 +107,8 @@
                 <input type="text" placeholder="imagen..." data-image>
 
                 <div class="button-container">
-                    <button type="submit" class="button-submit" id="button">Enviar...</button>
-                    <button type="reset" class="button-clear" id="button">Limpiar...</button>
+                    <button type="submit" class="button-submit" id="button">Enviar</button>
+                    <button type="reset" class="button-clear" id="button">Limpiar</button>
                 </div>
             </form>
         </section>
@@ -72,7 +116,7 @@
     </main>
     <footer class="footer-container">
         <h1>AluraGeek</h1>
-        <p>Desarrolado por Pacuino</p>
+        <p>Desarrollado por Pacuino</p>
     </footer>
     <script src="js/main.js" type="module"></script>
 </body>

@@ -1,13 +1,20 @@
 @import url(./reset.css);
+@import url(./section1.css);
+@import url(./section2.css);
 
 :root {
-    --main-purple: #5300c8;
+    --main-black: #000;
+    --main-white: #f0f0f0;
+    --main-yellow: #fbd309d0;
+    --main-gray: #303841;
+    --main-blue: #45567d;
+    --main-green: #a3be21;
+    --main-red: #d02804;
 }
 
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    display: block;
 }
 
 *, ::before, ::after {
@@ -15,43 +22,66 @@ html {
 }
 
 body {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto',sans-serif;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.4;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-header, footer {
-    background-color: var(--main-purple);
+header {
+    background-color: var(--main-yellow);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .main-container {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    
+    width: 100%;
+    height: auto;
+    background-color: var(--main-white);
+    overflow: hidden;
 }
 
-.product-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 4rem;
-    width: 0 auto;
-    margin-bottom: 6rem;
-}
-
-.card {
+footer {
+    background-color: var(--main-yellow);
+    width: 100%;
+    height: 15vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--main-purple);
-    border-radius: 5px;
-
+    align-items: center;
+    justify-content: center;
 }
 
-.img-container {
-    height: calc(100% - 6.8rem);
-    width: 100%;
-    padding: 10px;
-    object-fit: cover;
-}
+    /*--Tablet--*/
 
+@media (max-width: 768px) {
+
+    .main-container {
+        flex-direction: column;
+    }
+}
