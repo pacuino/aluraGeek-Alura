@@ -28,15 +28,18 @@
     position: sticky;
     height: 100%;
     width: 100%;
-    padding: 24px;
-    object-fit: cover;
+    padding: 14px;
     
+    margin: 0;
 }
 
 .img-container > img {
+    display: block;
     border: 2px solid var(--main-black);
     border-radius: 5px;
     background-color: var(--main-white);
+    margin:  0;
+    object-fit: cover;
 }
 
 .card-container--info {
@@ -45,6 +48,7 @@
     flex-direction: column;
     margin: 0;
     padding: 10px;
+    vertical-align: baseline;
 }
 
 .card-container--info > p {
